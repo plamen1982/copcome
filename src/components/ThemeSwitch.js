@@ -14,7 +14,7 @@ export const ThemeSwitch = ({ darkState, handleThemeChange }) => {
           console.log("Btn clicked!");
         }}
       >
-        COP TEST... TEST A COP... Empty spaces, what are we looking for... Someone to come... Semen...
+        Empty spaces, what are we looking for... Someone to come... Semen...
 If so...Let's get down to business, test 1, 2, 3... Bring these people some seeds... Golden seeds... From the sea/see
       </Button>
     </div>
