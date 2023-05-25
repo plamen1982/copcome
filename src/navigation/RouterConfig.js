@@ -7,8 +7,8 @@ import { NotFound } from "navigation/NotFound";
 import { ROOT, DASHBOARD, PAGE1, AUTH_PAGE1, LOGIN } from "navigation/CONSTANTS";
 import { Page1 } from "pages/Page1";
 import Login from "./Auth/Login";
-import { AuthorizedPage1 } from "pages/AuthorizedPage1";
-import PrivateRoute from "./Auth/PrivateRoute";
+// import { AuthorizedPage1 } from "pages/AuthorizedPage1";
+// import PrivateRoute from "./Auth/PrivateRoute";
 
 export const RouterConfig = () => {
   return (
@@ -21,7 +21,7 @@ export const RouterConfig = () => {
         <Route exact path={LOGIN} component={Login} />
 
         {/* List all private/auth routes here */}
-        <PrivateRoute path={AUTH_PAGE1} component={AuthorizedPage1} />
+        {/* <PrivateRoute path={AUTH_PAGE1} component={AuthorizedPage1} /> */}
 
         {/* Do not hesitate to play around by moving some routes from public to private and vice-versa */}
         {/* <PrivateRoute path={DASHBOARD}>
@@ -29,9 +29,7 @@ export const RouterConfig = () => {
         </PrivateRoute> */}
 
         {/* List a generic 404-Not Found route here */}
-        <Route path="*">
-          <NotFound />
-        </Route>
+        <Route path="*" component={NotFound} />
       </Routes>
     </div>
   );
